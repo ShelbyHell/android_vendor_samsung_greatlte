@@ -149,7 +149,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/greatlte/proprietary/media/slow_charging_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/slow_charging_usb.spi \
     vendor/samsung/greatlte/proprietary/media/temperature_limit_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/temperature_limit_usb.spi \
     vendor/samsung/greatlte/proprietary/media/water_protection_usb.spi:$(TARGET_COPY_OUT_SYSTEM)/media/water_protection_usb.spi \
-    vendor/samsung/greatlte/proprietary/product/lib64/libaptX_encoder.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libaptX_encoder.so \
     vendor/samsung/greatlte/proprietary/vendor/app/mcRegistry/07010000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/07010000000000000000000000000000.tlbin \
     vendor/samsung/greatlte/proprietary/vendor/app/mcRegistry/08130000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/08130000000000000000000000000000.tlbin \
     vendor/samsung/greatlte/proprietary/vendor/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/FFFFFFFF000000000000000000000001.drbin \
@@ -173,7 +172,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/greatlte/proprietary/vendor/bin/mcDriverDaemon:$(TARGET_COPY_OUT_VENDOR)/bin/mcDriverDaemon \
     vendor/samsung/greatlte/proprietary/vendor/etc/SoundBoosterParam.txt:$(TARGET_COPY_OUT_VENDOR)/etc/SoundBoosterParam.txt \
     vendor/samsung/greatlte/proprietary/vendor/etc/abox_debug.xml:$(TARGET_COPY_OUT_VENDOR)/etc/abox_debug.xml \
-    vendor/samsung/greatlte/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
     vendor/samsung/greatlte/proprietary/vendor/etc/audio_effects_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_common.conf \
     vendor/samsung/greatlte/proprietary/vendor/etc/audio_effects_sec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects_sec.xml \
     vendor/samsung/greatlte/proprietary/vendor/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
@@ -186,10 +184,11 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/greatlte/proprietary/vendor/etc/init/init.vendor.rilchip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.rilchip.rc \
     vendor/samsung/greatlte/proprietary/vendor/etc/init/vendor.samsung.hardware.gnss@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.gnss@1.0-service.rc \
     vendor/samsung/greatlte/proprietary/vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc \
+    vendor/samsung/greatlte/proprietary/vendor/etc/init/wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi.rc \
     vendor/samsung/greatlte/proprietary/vendor/etc/init/wifi_brcm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wifi_brcm.rc \
     vendor/samsung/greatlte/proprietary/vendor/etc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
     vendor/samsung/greatlte/proprietary/vendor/etc/mtu-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtu-conf.xml \
-    vendor/samsung/greatlte/proprietary/vendor/etc/nfc/SGP/sec_s3nrn82_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/SGP/sec_s3nrn82_rfreg.bin \
+    vendor/samsung/greatlte/proprietary/vendor/etc/nfc/BRI/sec_s3nrn82_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/BRI/sec_s3nrn82_rfreg.bin \
     vendor/samsung/greatlte/proprietary/vendor/etc/nfc/sec_s3nrn82_rfreg.bin:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/sec_s3nrn82_rfreg.bin \
     vendor/samsung/greatlte/proprietary/vendor/etc/pdpcnt-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pdpcnt-conf.xml \
     vendor/samsung/greatlte/proprietary/vendor/etc/plmn_delta.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta.bin \
@@ -207,24 +206,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/greatlte/proprietary/vendor/etc/wifi/bcmdhd_mon.bin_b2:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_mon.bin_b2 \
     vendor/samsung/greatlte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_b0 \
     vendor/samsung/greatlte/proprietary/vendor/etc/wifi/bcmdhd_sta.bin_b2:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/bcmdhd_sta.bin_b2 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/indoorchannel.info:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/indoorchannel.info \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_a0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_a0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_a0_ePA:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_a0_ePA \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_murata_r012_a1:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_murata_r012_a1 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_murata_r013_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_murata_r013_b0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_murata_r014_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_murata_r014_b0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_murata_r020_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_murata_r020_b0 \
+    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_murata_r031_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_murata_r031_b0 \
+    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_murata_r032_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_murata_r032_b0 \
     vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_murata_r033_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_murata_r033_b0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r01a_a1:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r01a_a1 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r01d_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r01d_b0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r01f_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r01f_b0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r01i_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r01i_b0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r02a_a1:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r02a_a1 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r02c_a1:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r02c_a1 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r02g_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r02g_b0 \
     vendor/samsung/greatlte/proprietary/vendor/etc/wifi/nvram.txt_r02j_b0:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/nvram.txt_r02j_b0 \
-    vendor/samsung/greatlte/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/samsung/greatlte/proprietary/vendor/firmware/APBargeIn_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBargeIn_AUDIO_SLSI.bin \
     vendor/samsung/greatlte/proprietary/vendor/firmware/APBiBF_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/APBiBF_AUDIO_SLSI.bin \
     vendor/samsung/greatlte/proprietary/vendor/firmware/AP_AUDIO_SLSI.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/AP_AUDIO_SLSI.bin \
@@ -251,6 +236,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/greatlte/proprietary/vendor/firmware/fimc_is_rta_imx333_imx320.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/fimc_is_rta_imx333_imx320.bin \
     vendor/samsung/greatlte/proprietary/vendor/firmware/iva10_rt-kangchen.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/iva10_rt-kangchen.bin \
     vendor/samsung/greatlte/proprietary/vendor/firmware/mfc_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/mfc_fw.bin \
+    vendor/samsung/greatlte/proprietary/vendor/firmware/nfc/BRI/sec_s3nrn82_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/BRI/sec_s3nrn82_firmware.bin \
     vendor/samsung/greatlte/proprietary/vendor/firmware/nfc/sec_s3nrn82_firmware.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nfc/sec_s3nrn82_firmware.bin \
     vendor/samsung/greatlte/proprietary/vendor/firmware/ois_fw_dom.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_fw_dom.bin \
     vendor/samsung/greatlte/proprietary/vendor/firmware/ois_fw_sec.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ois_fw_sec.bin \

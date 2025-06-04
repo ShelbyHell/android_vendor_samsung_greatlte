@@ -7131,7 +7131,6 @@
       mnc="08"
       apn="IMS"
       protocol="IPV6"
-      roaming_protocol="IPV6"
       authtype="0"
       type="ims"
   />
@@ -7566,8 +7565,7 @@
       mcc="244"
       mnc="05"
       apn="ims"
-      protocol="IPV6"
-      roaming_protocol="IPV6"
+      protocol="IPV4V6"
       type="ims"
   />
 
@@ -7575,8 +7573,7 @@
       mcc="244"
       mnc="05"
       apn="xcap"
-      protocol="IPV6"
-      roaming_protocol="IPV6"
+      protocol="IPV4V6"
       type="xcap"
   />
 
@@ -25271,7 +25268,7 @@
       mcc="330"
       mnc="110"
       apn="lte.claropr.com"
-      type="default,supl"
+      type="default,supl,xcap"
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
   />
@@ -25284,6 +25281,16 @@
       protocol="IPV4V6"
       roaming_protocol="IPV4V6"
       mmsc="http://mmsg.claropr.com:10021/mmsc"
+  />
+  
+   <apn carrier="IMS"
+      mcc="330"
+      mnc="110"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+      user_editable="0"
   />
 
    <apn carrier="Open Mobile"
@@ -27102,15 +27109,6 @@
       roaming_protocol="IPV4V6"
       user_editable="0"
       user_visible="0"
-  />
-
-  <apn carrier="MMS CLARO"
-      mcc="370"
-      mnc="02"
-      apn="internet.ideasclaro.com.do"
-      mmsc="http://mms.ideasclaro.com.do/mms/wapenc"
-      type="mms"
-      protocol="IPV4V6"
   />
 
   <apn carrier="MMS CLARO"
@@ -39184,14 +39182,6 @@
       protocol="IPV4V6"
   />
 
-  <apn carrier="VIETTEL IMS"
-      mcc="452"
-      mnc="04"
-      apn="ims"
-      type="ims"
-      protocol="IPV4V6"
-  />
-
   <apn carrier="VN Vietnamobile Email"
       mcc="452"
       mnc="05"
@@ -42201,32 +42191,6 @@
       mmsproxy="10.12.1.80"
       mmsport="80"
       type="default,supl,mms"
-  />
-
-  <apn carrier="TPG"
-      mcc="525"
-      mnc="10"
-      apn="internet"
-      type="default,supl"
-  />
-  
-  <apn carrier="TPG MMS"
-      mcc="525"
-      mnc="10"
-      apn="TPGMMS"
-      proxy="10.184.80.200"
-      port="8080"
-      mmsc="http://mms.tpgtelecom.com.sg"
-      mmsproxy="10.184.80.200"
-      mmsport="8080"
-      type="mms"
-  />
-  
-  <apn carrier="IMS"
-      mcc="525"
-      mnc="10"
-      apn="ims"
-      type="ims"
   />
 
   <apn carrier="PCSB"
@@ -47312,6 +47276,16 @@
       type="default"
   />
 
+  <apn carrier="WOM Vo4G"
+      mcc="732"
+      mnc="360"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      user_editable="0"
+      roaming_protocol="IPV4V6"
+  />
+
   <apn carrier="Digitel 412"
       mcc="734"
       mnc="01"
@@ -47723,6 +47697,26 @@
       mnc="02"
       apn="internet.cnt.net.ec"
       type="default,supl"
+  />
+
+  <apn carrier="CNT VoLTE"
+      mcc="740"
+      mnc="02"
+      apn="ims"
+      type="ims"
+      protocol="IPV4"
+      roaming_protocol="IPV4"
+      user_visible="0"
+  />
+
+  <apn carrier="CNT Emergency"
+      mcc="740"
+      mnc="02"
+      apn="emergency.volte.ims.cnt.net.ec"
+      type="Emergency"
+      protocol="IPV4"
+      roaming_protocol="IPV4"
+      user_visible="0"
   />
 
   <apn carrier="CNT 3G"
